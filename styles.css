@@ -3,8 +3,7 @@ body {
     font-family:Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1F1F33;
-    color: white;
+    background-color: #f4f4f4;
 }
 section {
     background-image: url('img.jpg');
@@ -20,11 +19,11 @@ section {
 .cover{
     display: grid;
     grid-template-rows: repeat(3, 320px);
-    grid-template-columns: repeat(3, 380px);
+    grid-template-columns: repeat(3, 420px);
     justify-content: center;
     justify-items: center;
-    row-gap: 230px;
-    column-gap: 30px;
+    row-gap: 200px;
+    column-gap: 80px;
 }
 .container{
     display: grid;
@@ -37,8 +36,7 @@ section {
     display: grid;
     column-gap: 20px;
     grid-template-columns:1fr 2fr;
-    background-color: #1F1F33;
-
+    background-color: azure;
     border-radius: 10px;
 }
 .box1 img{
@@ -66,7 +64,7 @@ section {
 }
 #techniques {
     background-image: none; /* Remove background image */
-    background-color:  #1F1F33; /* Set a solid background color or other styling */
+    background-color: #f4f4f4; /* Set a solid background color or other styling */
     padding: 20px;
 }
 
@@ -74,11 +72,11 @@ section {
 /* Optional: Specific styling for water-saving techniques page */
 
 .technique-card {
-    background-color: rgb(0,18,36);
+    background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    height: 480px;
-    width: 360px;
+    height: 460px;
+    width: 420px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin-bottom: 20px;
     padding: 20px;
@@ -155,7 +153,7 @@ ul li {
 
 
 header {
-    background-color:      rgb(0,18,36);; 
+    background-color: #4CAF50;
     color: white;
     padding: 15px 0;
     text-align: center;
@@ -183,7 +181,7 @@ main {
 footer {
     text-align: center;
     padding: 10px;
-
+    background-color: #4CAF50;
     color: white;
     position: fixed;
     width: 100%;
