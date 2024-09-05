@@ -20,11 +20,11 @@ section {
 .cover{
     display: grid;
     grid-template-rows: repeat(3, 320px);
-    grid-template-columns: repeat(3, 420px);
+    grid-template-columns: repeat(3, 380px);
     justify-content: center;
     justify-items: center;
-    row-gap: 200px;
-    column-gap: 80px;
+    row-gap: 230px;
+    column-gap: 30px;
 }
 .container{
     display: grid;
@@ -77,8 +77,8 @@ section {
     background-color: rgb(0,18,36);
     border: 1px solid #ddd;
     border-radius: 8px;
-    height: 460px;
-    width: 420px;
+    height: 480px;
+    width: 360px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin-bottom: 20px;
     padding: 20px;
