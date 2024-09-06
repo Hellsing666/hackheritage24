@@ -3,61 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="styles.css" rel="stylesheet">
+    <title>Water Scarcity Prevention Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #0099cc;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+        }
+        .product img {
+            max-width: 150px;
+            margin-right: 20px;
+        }
+        .product-details {
+            flex-grow: 1;
+        }
+        .buy-now {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-now:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Water Efficiency Wiki</h1>
-        <nav>
-            <ul>
-                <li><a href="index.htm">Home</a></li>
-                <li><a href="article.html?id=1">Water-Saving Techniques</a></li>
-                <li><a href="irrigation.html?id=2">Efficient Irrigation Methods</a></li>
-                <li><a href="case.html?id=3">Case Studies</a></li>
-                <li><a href="research.html?id=4">Research & Findings</a></li>
-                <li><a href="products.html?id=5">Products</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="content1">
-        <div class="img1">
-            <img src="157897.jpg">
-            <div>
-                <p>Berserk</p>
-            </div>            
-        </div>
-        <div class="img2">
-            <img src="259070.jpg">            
-            <div>
-               <p>Vagabond</p> 
-            </div> 
-        </div>
-        <div class="img3">
-            <img src="266834.jpg">    
-            <div>
-              <p>Goodnight Punpun</p>  
-            </div>                     
-        </div>
- 
+    <div class="header">
+        <h1>Water Scarcity Prevention Products</h1>
+        <p>Buy products to help conserve water and prevent water scarcity.</p>
     </div>
-    <div class="content2">
-        <div class="img4">
-            <img src="260006.jpg">            
-            <div>
-                <p>2Oth Century Boys</p>
-            </div> 
+
+    <div class="container">
+
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="rainwater-harvester.jpg" alt="Rainwater Harvester">
+            <div class="product-details">
+                <h2>Rainwater Harvester</h2>
+                <p>A simple system to collect and store rainwater for reuse, helping you save water in dry seasons.</p>
+                <p><strong>Price:</strong> $299</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
-        <div class="img5">
-            <img src="96223.jpg">
-            <div>
-               <p>The Climber</p> 
-            </div> 
+
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="low-flow-showerhead.jpg" alt="Low-Flow Showerhead">
+            <div class="product-details">
+                <h2>Low-Flow Showerhead</h2>
+                <p>Reduce your water usage with this efficient showerhead that saves up to 50% of water per shower.</p>
+                <p><strong>Price:</strong> $49</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
         </div>
-     <footer>
-        <p>&copy; 2024 Water Efficiency Wiki. All rights reserved.</p>
-    </footer>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="smart-irrigation.jpg" alt="Smart Irrigation System">
+            <div class="product-details">
+                <h2>Smart Irrigation System</h2>
+                <p>Automated irrigation system that uses sensors to deliver the right amount of water to your garden, reducing water waste.</p>
+                <p><strong>Price:</strong> $199</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 </html>
