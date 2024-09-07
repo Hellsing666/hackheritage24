@@ -134,7 +134,7 @@
                 cartItem.innerHTML = `
                     <div>
                         <h2>${product.name}</h2>
-                        <p><strong>Price:</strong> $${product.price}</p>
+                        <p><strong>Price:</strong> ₹${product.price}</p>
                     </div>
                     <button class="remove-btn" onclick="removeFromCart(${index})">Remove</button>
                 `;
@@ -149,9 +149,9 @@
             let discountedAmount = totalAmount;
             if (discount > 0) {
                 discountedAmount = totalAmount - (totalAmount * discount);
-                totalAmountElement.innerHTML = `Total Amount: <s>$${totalAmount}</s> <strong>$${discountedAmount.toFixed(2)}</strong> <span class="discount-applied">(Discount Applied)</span>`;
+                totalAmountElement.innerHTML = `Total Amount: <s>₹${totalAmount}</s> <strong>₹${discountedAmount.toFixed(2)}</strong> <span class="discount-applied">(Discount Applied)</span>`;
             } else {
-                totalAmountElement.textContent = `Total Amount: $${totalAmount}`;
+                totalAmountElement.textContent = `Total Amount: ₹${totalAmount}`;
             }
         }
 
@@ -192,7 +192,7 @@
                     items: cart.map(item => ({
                         name: item.name,
                         amount: (item.price * 100),  
-                        currency: 'usd',
+                        currency: 'inr',  // Set currency to INR for Indian Rupees
                         quantity: 1
                     })),
                     totalAmount: totalAmount * 100,  
