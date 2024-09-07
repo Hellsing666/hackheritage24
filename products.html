@@ -61,38 +61,61 @@
 
         <!-- Product 1 -->
         <div class="product">
-            <img src="rainwater-harvester.jpg" alt="Rainwater Harvester">
+            <img src="https://cdn.prod.website-files.com/63c1609e0d96686a63dde7ca/63c178edcd72f53709b54210_605b77a73229e730a15f1869_Rainwater-Harvesting-for-Homes-02-scaled.jpeg" alt="Rainwater Harvester">
             <div class="product-details">
                 <h2>Rainwater Harvester</h2>
                 <p>A simple system to collect and store rainwater for reuse, helping you save water in dry seasons.</p>
-                <p><strong>Price:</strong> $299</p>
-                <button class="buy-now">Buy Now</button>
+                <p><strong>Price:</strong> ₹299</p>
+                <button class="buy-now" onclick="addToCart('Rainwater Harvester', 299)">Buy Now</button>
             </div>
         </div>
 
         <!-- Product 2 -->
         <div class="product">
-            <img src="low-flow-showerhead.jpg" alt="Low-Flow Showerhead">
+            <img src="https://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2011/6/15/0/iStock-12231244_bathroom-showerhead_s4x3.jpg.rend.hgtvcom.406.305.85.suffix/1405452446753.webp" alt="Low-Flow Showerhead">
             <div class="product-details">
                 <h2>Low-Flow Showerhead</h2>
                 <p>Reduce your water usage with this efficient showerhead that saves up to 50% of water per shower.</p>
-                <p><strong>Price:</strong> $49</p>
-                <button class="buy-now">Buy Now</button>
+                <p><strong>Price:</strong> ₹49</p>
+                <button class="buy-now" onclick="addToCart('Low-Flow Showerhead', 49)">Buy Now</button>
             </div>
         </div>
 
         <!-- Product 3 -->
         <div class="product">
-            <img src="smart-irrigation.jpg" alt="Smart Irrigation System">
+            <img src="https://circuitdigest.com/sites/default/files/projectimage_mic/Arduino-Automatic-Irrigation-System.jpg" alt="Smart Irrigation System">
             <div class="product-details">
                 <h2>Smart Irrigation System</h2>
                 <p>Automated irrigation system that uses sensors to deliver the right amount of water to your garden, reducing water waste.</p>
-                <p><strong>Price:</strong> $199</p>
-                <button class="buy-now">Buy Now</button>
+                <p><strong>Price:</strong> ₹199</p>
+                <button class="buy-now" onclick="addToCart('Smart Irrigation System', 199)">Buy Now</button>
             </div>
         </div>
 
     </div>
+
+    <script>
+        // Function to add a product to the cart and redirect to the cart page
+        function addToCart(productName, productPrice) {
+            // Get the current cart from localStorage or create a new one if it doesn't exist
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Create a product object
+            const product = {
+                name: productName,
+                price: productPrice
+            };
+
+            // Add the product to the cart array
+            cart.push(product);
+
+            // Save the updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Redirect to the cart page
+            window.location.href = 'cart.html';
+        }
+    </script>
 
 </body>
 </html>
