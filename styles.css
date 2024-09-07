@@ -82,6 +82,10 @@ section {
     padding: 20px;
     margin-left: 23px;
     text-align: center; 
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 20%, transparent 20%, transparent), radial-gradient(circle, transparent 5%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#4CAF50 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #4CAF50 2px, #e5e5f7 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
 
 .technique-card img {
@@ -248,4 +252,21 @@ footer {
     justify-content: space-around;
     padding: 50px;
     background-color: #152232a8;
+}
+.r{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(180, 188, 192);
+    height: 100px;
+    width: 80%;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #e5e5f7;
+
+
+}
+.r h3{
+    color: black;
 }
